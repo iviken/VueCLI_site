@@ -1,0 +1,1 @@
+export let com = 1;
