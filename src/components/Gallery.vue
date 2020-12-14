@@ -53,7 +53,7 @@ export default {
 
 .text {
 	font-size: smaller;
-	padding: 20px;
+	padding: 10px;
 }
 
 .transi {

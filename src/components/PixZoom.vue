@@ -49,8 +49,22 @@ export default {
 	
 }
 
-.bigPix{
-	height: 65vh;
+/*	Для ПК	*/
+@media (min-width:	1024px){
+
+	.bigPix{
+		height: 65vh;
+	}
+
+}
+
+/*	Для мобильных	*/
+@media(max-width:	800px){
+
+	.bigPix{
+		width: 95vw;
+	}
+
 }
 
 .transi {

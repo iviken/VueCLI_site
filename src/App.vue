@@ -45,12 +45,8 @@ export default {
 				this.greetings = '';
 			break;
 			case 'radio4':
-				this.menuSelector = [];
-				this.greetings = [
-					': : : : : : : По вопросам сотрудничества звоните или пишите на Whatsapp: +7 977 6437154 : : : : : : :',
-					': : : : : : : : : : : : : : : : : : : : : : : : : : : : : : Сайт сделан на Vue : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :',
-					': : : : : : : : : : : : : : : : : : : Ищите исходники на github.com/iviken/VueCLI_site : : : : : : : : : : : : : : : : : : :'
-				];
+				this.menuSelector = ['whatsapp','vue','git'];
+				this.greetings = '';
 			break;
 		}
 	},
@@ -81,6 +77,7 @@ export default {
 body {
 	overflow-x: hidden;
 	background-image: url("./assets/back1.jpg");
+	background-size: cover;
 }
 /*	Для ПК	*/
 @media (min-width:	1024px){

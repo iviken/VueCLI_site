@@ -2,7 +2,7 @@
   <div class="hello subMenu">
 	<div class="menu transi">
 		<h1>{{ msg }}</h1>
-		<a href="index.html"><img alt="logo" src="@/assets/imgs/portfolio_logo_bw.png"></a>
+		<a href="index.html"><img alt="logo" src="@/assets/imgs/portfolio_logo_bw.png" class="logo"></a>
 		<ul>
 			<li>
 				<div class="form_radio_btn" @click="selectRadio('radio1')">
@@ -58,7 +58,13 @@ export default {
 .menu{
 	background: #fff6;
 	width: 50%;
-	
+}
+
+/*	Для мобильных	*/
+@media(max-width:	800px){
+	.logo {
+		width: 60%;
+	}
 }
 
 .form_radio_btn input[type=radio] {
@@ -91,9 +97,6 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 
 .transi {
